@@ -4,33 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0svjQEgQWgOLaXXp6ghvsgCSNeQyVjJ4uHKgombiqcG85t4xmTpLt7Fyw6jy7C0C" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
   <header>
     <h1><a href="index.html">Your Name</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
     <section id="all-projects">
       <h2>My Projects</h2>
-      <div class="project-card">
-        <h3>Project Title 1</h3>
-        <p>A brief description of your project 1. Include links to live demos or code repositories if available.</p>
-        <a href="#">View Project</a>
-      </div>
-      </section>
+      <p>Welcome to my project portfolio! Here's a collection of projects showcasing my skills and experience.</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1 thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Project Title 1</h5>
+              <p class="card-text">A brief description of your project 1. Emphasize the challenges addressed and the results achieved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2 thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Project Title 2</h5>
+              <p class="card-text">Another project description highlighting its unique features and the value it delivers.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Your Name</p>
+    <ul class="social-links">
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-boQlYzfxj6SKRVzGUAoCdZFKwfQy/j1AN3yQJJxVecycwTXaPLjh7swi/qfwSXUjOm" crossorigin="anonymous"></script>
 </body>
 </html>

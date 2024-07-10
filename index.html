@@ -4,44 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0svjQEgQWgOLaXXp6ghvsgCSNeQyVjJ4uHKgombiqcG85t4xmTpLt7Fyw6jy7C0C" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
-  <header>
-    <h1><a href="#">Your Name</a></h1>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <header class="header bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto"> <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
+
+    <section id="hero" class="d-flex justify-content-center align-items-center py-5">
+      <div class="row text-center">
+        <div class="col-md-8">
+          <img src="images/hero-banner.jpg" alt="Hero banner image representing your work" class="img-fluid mb-4">
+          <h2>Empowering Ideas Through Design & Development</h2>
+          <p>I'm a passionate [Your profession] with a focus on [Your area of expertise]. I create user-centric experiences for [Target audience] through innovative [Skills].</p>
+          <a href="#featured-projects" class="btn btn-primary">View Featured Projects</a>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
-      <h2>About Me</h2>
-      <p>Write a short introduction about yourself, your career goals, and your experience.</p>
-      <a href="resume.pdf" download>Download Resume</a>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>Write a more detailed introduction about yourself, your career journey, and your passions. Highlight your key strengths and accomplishments.</p>
+          <ul class="skills-list list-unstyled d-flex flex-wrap">
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+            <li>Skill 4</li>
+          </ul>
+          <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+        </div>
+      </div>
     </section>
 
     <section id="featured-projects">
       <h2>Featured Projects</h2>
-      <div class="project-card">
-        <h3>Project Title 1</h3>
-        <p>A brief description of your project 1. Include links to live demos or code repositories if available.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project Title 2</h3>
-        <p>A brief description of your project 2. Include links to live demos or code repositories if available.</p>
-        <a href="#">View Project</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Your Name</p>
-  </footer>
-</body>
-</html>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1 thumbnail">
+            <div class="card-body">
+              <h3 class="card-title">Project Title 1</h3>
+              <p class="card-text">A brief description of your most impactful project. Emphasize the challenges addressed and the results achieved.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2 thumbnail">
+            <div class="card-body">
+                <h3 class="card-title">Project Title 2</h3>
+                <p class="card-text">Another project description highlighting its unique features and the value it delivers.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+      </main>
+    
+      <footer class="footer mt-5 py-3 bg-light text-center">
+        <p>&copy; 2024 Your Name</p>
+        <ul class="social-links list-unstyled d-flex justify-content-center mb-0">
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-boQlYzfxj6SKRVzGUAoCdZFKwfQy/j1AN3yQJJxVecycwTXaPLjh7swi/qfwSXUjOm" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
