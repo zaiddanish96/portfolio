@@ -32,28 +32,27 @@ img {
 
 header.header {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
 }
 
 .navbar-brand {
-  font-size: 1.5em;
+  font-size: 2rem; /* Adjusted font size for better responsiveness */
   font-weight: bold;
   color: #333;
 }
 
 .nav-link {
   color: #333;
-  margin-right: 20px;
+  margin-right: 20px; /* Adjusted margin for better spacing */
   transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #007bff;
 }
 
 /* Hero Section Styles */
@@ -64,12 +63,13 @@ header.header {
   background-image: url("images/hero-background.jpg"); /* Replace with your background image */
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: black;
 }
 
 #hero h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: black;
 }
 
 #hero p {
@@ -125,7 +125,7 @@ header.header {
 
 .card {
   margin-bottom: 40px;
-  border: none;
+  border: 1px solid #ddd; /* Added border for better separation */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -162,6 +162,13 @@ footer.footer {
   text-align: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 .social-links li {
   margin: 0 10px;
 }
@@ -179,7 +186,7 @@ footer.footer {
 
 @media (max-width: 768px) {
   .navbar-brand {
-    font-size: 1.2em;
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
   }
 
   .nav-link {
@@ -214,5 +221,3 @@ footer.footer {
   }
 }
 
-
-  
