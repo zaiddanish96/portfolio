@@ -8,47 +8,49 @@
 </head>
 <body>
 
-  <header class="header bg-light">
-    <div class="container">
-      <nav class="navbar">
-        <a class="navbar-brand" href="index.html">Hi, I'm Zaid Danish</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="navbar-collapse collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  <header class="header">
+    <nav class="navigation">
+      <a href="index.html" class="logo">Hi, I'm Zaid Danish</a>
+      <ul class="nav-links">
+        <!-- <li><a href="index.html">About Me</a></li> class="active"  -->
+        <li><a href="#projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
   </header>
 
   <main class="container py-5">
     <section id="contact">
       <h2>Get in Touch</h2>
       <p>Feel free to send me a message using the form below. I'm always happy to connect and discuss new opportunities.</p>
+      <br>
       <form id="contactForm" method="post" action="your-email@example.com">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
           </div>
+          <br>
           <div class="col-md-6 mb-3">
             <label for="email" class="form-label">Email Address</label>
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
         </div>
+        <br>
         <div class="mb-3">
           <label for="company" class="form-label">Company (Optional)</label>
           <input type="text" class="form-control" id="company" name="company">
         </div>
+        <br>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
           <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
         </div>
+        <br>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </section>

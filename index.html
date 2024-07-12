@@ -3,85 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Zaid Danish Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#">Hi, I'm Zaid Danish</a>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <div class="header-container">
+      <nav class="navigation">
+        <a href="#" class="logo">Hi, I'm Zaid Danish</a>
+        <ul class="nav-links">
+          <!-- <li><a href="#about">About Me</a></li> class="active"  -->
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="hero" class="hero d-flex justify-content-center align-items-center py-5">
-      <div class="row text-center">
-        <div class="col">
-          <img alt="Hero banner image" class="img-fluid mb-4">
-          <h2>Architecting Reality: Embedded Hardware Engineer</h2>
-          <p>I'm a passionate embedded hardware engineer weaving hardware and software to bring ideas to life.</p>
-          <a href="#featured-projects" class="btn btn-primary">Featured Projects</a>
-        </div>
-      </div>
+    <section id="hero" class="hero">
+      <h2>Hero section</h2>
+      <p>image and quote here</p>
     </section>
 
     <section id="about">
-      <div class="row">
-        <div class="col">
-          <h2>About Me</h2>
-          <p>lorem</p>
-          <ul class="skills-list list-unstyled d-flex flex-wrap">
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <li>Skill 4</li>
-          </ul>
-          <a href="resume.pdf" download class="btn btn-secondary">Resume</a>
-        </div>
-      </div>
+      <h2>About Me</h2>
+      <p>Introduce yourself and your skills here. Highlight your experience and achievements.</p>
     </section>
 
     <section id="featured-projects">
       <h2>Featured Projects</h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="images/project1.jpg" class="card-img-top" alt="Project 1 thumbnail">
-            <div class="card-body">
-              <h3 class="card-title">Project Title 1</h3>
-              <p class="card-text">A brief explanation here</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/project2.jpg" class="card-img-top" alt="Project 2 thumbnail">
-            <div class="card-body">
-              <h3 class="card-title">Project Title 2</h3>
-              <p class="card-text">Another project description here</p>
-              <a href="#" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
+
   </main>
 
-  <footer class="footer mt-5 py-3 bg-light text-center">
+  <footer class="footer">
     <p>&copy; 2024 Zaid Danish</p>
-    <ul class="social-links list-unstyled d-flex justify-content-center mb-0">
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-github"></i></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <ul class="nav-links">
+      <li><a href="#">LinkedIn<i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#">github<i class="fab fa-github"></i></a></li>
+      <li><a href="#">twidder<i class="fab fa-twitter"></i></a></li>
     </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
   </footer>
+
 </body>
 </html>
